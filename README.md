@@ -1,4 +1,10 @@
-# Advanced Claude for business operations
+# Workflow Fieldbook
+
+**[Open the free browser tool](https://edcadet10.github.io/claude-executive-automation-playbook/)**
+
+Choose a weekly plan, team handoff, dealership report, housing review or a blank workflow. Set your own goal, run the checklist, record what happened and download Markdown or print a PDF. Anyone can use it without signing in, installing software or paying for AI. Entries stay in your tab. Download a copy before refreshing or leaving.
+
+## For consultants and technical teams
 
 **A one-on-one implementation playbook by Jeff Cadet.** Start with the last decision the executive had to make. Rebuild the evidence behind it, give Claude a narrow job, then have the executive operate the workflow without the consultant.
 
@@ -12,7 +18,7 @@ The worked engagement is a dealership month-end review. Sales sees an open deal 
 ### Build plan
 
 1. Scope the decision and define the executive's acceptance test.
-2. Build a repeatable financial brief from fictional records and check the numbers independently.
+2. Build the public workflow planner, then create a repeatable financial brief from fictional records and check the numbers independently.
 3. Put the brief behind an MCP tool and use it in Claude Code. Map the equivalent HubSpot, QuickBooks Online and Microsoft 365 integration paths.
 4. Rehearse unattended execution, recovery, human review and handoff.
 
