@@ -1,0 +1,10 @@
+[Unit]
+Description=Check the approved reporting snapshot on weekday mornings
+
+[Timer]
+OnCalendar=Mon..Fri *-*-* 07:15:00 UTC
+Persistent=true
+Unit=fieldbook-report.service
+
+[Install]
+WantedBy=timers.target
