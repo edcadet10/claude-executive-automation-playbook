@@ -1,0 +1,41 @@
+WORKFLOW FIELDBOOK
+A reusable worksheet by Jeff Cadet
+
+Use this page on paper or copy it into any text editor.
+
+Task or decision:
+When I do it:
+Person who reviews the result:
+Sources I will use and their dates:
+What a good result looks like:
+
+[ ] 1. Choose one completed example.
+       What happened, and how long did it take?
+
+[ ] 2. Gather the evidence.
+       Which source supports each important fact? What is missing?
+
+[ ] 3. Run one small case.
+       Write the result alongside the expected outcome.
+
+[ ] 4. Challenge it.
+       Change or remove one input. What should happen?
+       What actually happened?
+
+[ ] 5. Review and repeat.
+       Who checked it, what changed, and when is the next run?
+
+Run notes:
+
+Optional prompt for an AI assistant:
+Help me with [task]. Use [sources]. Ask me for missing information.
+Show the source for each factual claim. Check the result against [success
+condition]. Give [reviewer] a draft with unresolved questions. Wait for
+review before taking any external action.
+
+Worked example:
+A volunteer coordinator prepares a Saturday roster. The sources are the
+sign-up sheet and the list of required shifts. Success means every shift
+has a confirmed volunteer and nobody is double-booked. Remove one volunteer
+from the example: the affected shift should be marked open. The coordinator
+checks the gap before contacting anyone.

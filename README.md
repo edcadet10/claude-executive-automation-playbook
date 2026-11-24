@@ -2,7 +2,11 @@
 
 **[Open the free browser tool](https://edcadet10.github.io/claude-executive-automation-playbook/)**
 
-Choose a weekly plan, team handoff, dealership report, housing review or a blank workflow. Set your own goal, run the checklist, record what happened and download Markdown or print a PDF. Anyone can use it without signing in, installing software or paying for AI. Entries stay in your tab. Download a copy before refreshing or leaving.
+Choose a weekly plan, team handoff, dealership report, housing review or a blank workflow. Set your own goal, run the checklist and record what happened. Save an editable copy to reopen later, download Markdown, or print a PDF. Anyone can use it without signing in, installing software or paying for AI. Entries stay in your tab until you save a file.
+
+Prefer working on paper or in a text editor? [Get the plain-text worksheet](docs/worksheet.txt).
+
+[![Workflow Fieldbook showing a dealership margin review beside its editable inputs](assets/fieldbook.png)](https://edcadet10.github.io/claude-executive-automation-playbook/)
 
 ## For consultants and technical teams
 
@@ -19,13 +23,8 @@ The worked engagement is a dealership month-end review. Sales sees an open deal 
 | [Commission client integrations](playbook/integrations.md) | HubSpot, QuickBooks Online and Microsoft 365 runbooks with source mappings, authorization checks and vendor documentation |
 | [Operate and hand over the workflow](playbook/operations.md) | A durable review ledger, opt-in Claude drafting, a Linux timer, recovery drills and owner acceptance criteria |
 
-### Build plan
+### Verify the implementation
 
-1. Scope the decision and define the executive's acceptance test.
-2. Build the public workflow planner, then create a repeatable financial brief from fictional records and check the numbers independently.
-3. Put the brief behind an MCP tool and use it in Claude Code. Map the equivalent HubSpot, QuickBooks Online and Microsoft 365 integration paths.
-4. Rehearse unattended execution, recovery, human review and handoff.
-
-Work through the pull requests in sequence to see each stage added to a working baseline. [Merged pull requests](https://github.com/edcadet10/claude-executive-automation-playbook/pulls?q=is%3Apr+is%3Amerged)
+Run `python -m lab.report` for the worked case and `python -m unittest discover -s tests -v` for its regression suite. The integration check uses a real MCP process. CI also fires the packaged timer on a disposable Linux host, then replays the job and checks for the same draft ID. Model-backed narrative generation requires a working Claude account. [CI runs](https://github.com/edcadet10/claude-executive-automation-playbook/actions/workflows/lab.yml) · [Sequential pull requests](https://github.com/edcadet10/claude-executive-automation-playbook/pulls?q=is%3Apr+is%3Amerged)
 
 All dealership figures, identifiers and policies in this repository are fictional. Keep engagement workpapers in the client's private workspace.
