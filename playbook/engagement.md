@@ -25,13 +25,29 @@ Schedule a separate 45–60 minute discovery call. Ask the executive to drive th
 | Baseline | Last completed manual report | Preparation minutes, corrections, reviewers and delivery deadline |
 | Success condition | Recompute the gap, trace each number, then repeat a failed run | Tolerance agreed by finance, target time and evidence owner |
 
-Rank candidate workflows together. Score recurrence, decision value and availability of a reconciled reference from 1–3 each. Subtract 1–3 for access/setup effort. Record the four inputs and break a tie by asking which deliverable the executive will use next week. Example scores for a discovery rehearsal follow.
+### Choose where the workshop can change a decision
 
-| Candidate | Recurrence | Decision value | Reference available | Setup effort | Total | First deliverable |
-| ---|---:|---:|---:|---:|---:|--- |
-| Dealership margin review | 3 | 3 | 3 | 1 | 8 | Single-store draft and controller tie-out |
-| Community underwriting sensitivity | 2 | 3 | 2 | 2 | 5 | Occupancy downside with disclosed assumptions |
-| Multi-entity board packet | 3 | 3 | 1 | 3 | 4 | Entity mapping and review policy |
+Ask the executive to name the next decision, its date, the person who can act and the consequence of being late or wrong. Ask the source owner to show one approved input and the reference they would accept to check the result. A candidate without a usable reference can support a learning exercise while its owner obtains the evidence. Keep it out of the recommendation for live investment until then.
+
+| Candidate | Business question | Evidence that would move it up | Reason to defer |
+| --- | --- | --- | --- |
+| Dealership close | Which margin variance warrants attention at the next operating meeting? | The controller has an approved close, threshold policy and a recent example of time lost preparing or correcting the brief. | The report is already timely and the actual delay is a decision about pricing or buying stock. |
+| Housing acquisition | Which occupancy or expense assumption could change whether the deal advances? | A committee decision is imminent, the investment lead has a dated rent roll and expense statement, and can validate the downside case. | The deal has no decision date or its assumptions cannot yet be checked. |
+| Cross-entity board reporting | Which exception should the owner address across businesses? | Entity leads agree on metric definitions, reporting periods, access and who will act on a variance. | A consolidated figure would conceal different definitions, ownership or data permissions. |
+
+Among ready candidates, ask where a better answer could change an action before the next decision date. Use the cost of delay or avoidable rework to break a tie. If none is ready, use the session to resolve the missing source or decision owner and rehearse on fictional data. The sponsor records the first choice, the best alternative, the reason for deferral and what would reverse the order.
+
+### Agree on the value test before building
+
+Pick one primary measure for the selected decision. For the dealership, time preparation, review and corrections through controller acceptance. For underwriting, measure whether the investment lead receives a reconciled downside case before the committee deadline. Record financial accuracy, entity isolation and approval as conditions of release. The sponsor sets the minimum improvement worth funding and an acceptable operating cost before the first comparison.
+
+Use comparable cases and count every person's time. In a **fictional close**, manual preparation takes 80 minutes and review takes 10. Assisted preparation takes 30 and review takes 65. The team would spend five additional minutes per cycle (95 versus 90). Investigate the extra review before proposing a rollout on time savings. Estimate model, hosting and support costs separately from implementation effort. Record time released as capacity unless the sponsor identifies an expense that will actually go away.
+
+### Assign decisions and limit the first investment
+
+The executive sponsors one decision in one entity and authorizes further spend. The controller or investment lead accepts the source values and signs release. The application owner grants scoped access. The platform owner takes responsibility for credentials, schedule, alert delivery and recovery. Jeff facilitates the evidence review, builds the pilot with the executive and hands over the operating procedure.
+
+Use code for calculations, entity checks and deduplication. Give Claude the language task of drafting and challenging explanations from verified facts. Compare the draft against the existing template or rules-based report. Retain the simpler route if Claude adds review effort without the agreed decision benefit. Anthropic discusses the cost and latency trade-offs when increasing agent complexity. [Building effective agents](https://www.anthropic.com/research/building-effective-agents)
 
 Before day one, Jeff prepares an entity-specific context sheet, normalized extracts, a hand-calculated reference, an exception case and a clean learner environment. The controller supplies a signed-off example and the policy version. The administrator identifies sandbox and delegated access. If a dependency is late, record its owner and use the synthetic pack for that module.
 
@@ -65,4 +81,10 @@ For the optional third day, select one seven-hour track during discovery.
 
 Give the executive a blank session and the previous month's accepted report as a reference. Ask them to select the entity, rebuild the draft, show the three source records, explain percentage points and rerun the same period. Swap one source to another entity and observe what they do. A pass requires correct figures, explicit treatment of missing evidence, a blocked mismatch and one reviewable result per input revision. A numerical miss or an invented source reopens the exercise.
 
-Repeat the baseline stopwatch on comparable periods and record preparation minutes, correction count, exceptions and review time. Example worksheet: `period | source completeness | manual minutes | assisted minutes | corrections | review minutes | approver`. Compute observed hours saved as the paired difference in total human minutes divided by 60. Investigate a slower run and include training or exception-handling time in its explanation. At 30 days, review three real cycles or agree on the next available close if fewer have occurred.
+**Decision at handoff.** A reconciled result, successful failure drill and independent executive replay qualify the pilot for supervised use. Record any missing operating approval or live integration test with its owner. An optional third day can remove a specific deployment bottleneck or test a second business decision. The sponsor can also keep the pilot supervised and release the remaining budget.
+
+**At the next real cycle**, run the pilot alongside the existing process in one entity. Record the agreed primary measure, all review and correction effort, material errors, model and hosting costs and who made the decision. Use matching inputs and the same acceptance criteria. Investigate a slower result. If the quality check fails, hold release and return to the accepted process.
+
+**At the sponsor review**, expand to one more entity only if the observed cycle meets the agreed value and quality targets, the receiving owner accepts the operating cost and their data boundary has been tested. Revise a fixable shortfall and retest. Stop or retain the existing process if the business benefit does not justify the burden. Put the review on the business calendar at the next comparable close or committee meeting. One observed cycle does not establish annual savings.
+
+**Executive decision record** — `decision and date | alternatives deferred | reversal condition | baseline and target | observed benefit and full cost | quality and access findings | sponsor and operator | expand, revise or stop | next review`. Keep the completed record in the client's private workspace.
