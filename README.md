@@ -15,6 +15,8 @@ The worked engagement is a dealership month-end review. Sales sees an open deal 
 | [Run the engagement](playbook/engagement.md) | A 30-minute fit call, discovery workpaper, 14-hour core workshop and optional seven-hour extension |
 | [Meet the practitioner](playbook/jeff-cadet.md) | Public examples to demonstrate, how Jeff teaches with them and what to confirm before an engagement |
 | [Run the reporting lab](playbook/reporting-lab.md) | A reproducible month-end packet, controller tie-out, failure drills and a housing-investment exercise |
+| [Teach Claude Code and MCP](playbook/claude-workshop.md) | An executable read-only MCP server, a reusable skill, a review agent and fresh-session exercises |
+| [Commission client integrations](playbook/integrations.md) | HubSpot, QuickBooks Online and Microsoft 365 runbooks with source mappings, authorization checks and vendor documentation |
 
 ### Build plan
 

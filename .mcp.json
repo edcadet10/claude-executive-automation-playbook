@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "fieldbook": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "--frozen", "--offline", "python", "-m", "lab.mcp_server"]
+    }
+  }
+}
