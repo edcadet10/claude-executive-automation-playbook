@@ -13,6 +13,8 @@ The GitHub Pages tool runs in the visitor's tab. The public repository runs CI o
 
 ## Rehearse locally
 
+A client already operating an automation platform can keep the schedule there. Use a recurrence trigger in Power Automate for an M365-owned flow, a published Schedule Trigger workflow in n8n, or a scheduled scenario in Make. Pass the approved entity and period to the private reporting worker. Keep the revision key and human decision in durable storage. Rehearse retries, verify the platform's timezone and credential owner, and compare usage costs against the monthly run count before selecting it. [Power Automate recurrence](https://learn.microsoft.com/en-us/power-automate/run-scheduled-tasks) · [n8n Schedule Trigger](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.scheduletrigger/) · [Make scheduling](https://help.make.com/schedule-a-scenario)
+
 From the checkout root, run the following commands on the fictional fixture. The first command returns a draft ID. A second run returns the same ID and `created: false`. Substitute the returned ID wherever this example uses 1.
 
 ```sh

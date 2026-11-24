@@ -1,0 +1,6 @@
+{
+  "name": "workflow-fieldbook",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test tests/fieldbook.test.mjs"}
+}

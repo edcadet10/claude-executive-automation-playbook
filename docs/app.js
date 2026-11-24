@@ -1,4 +1,4 @@
-import {presets, makePlan, exportPlan} from "./presets.js";
+import {presets, makePlan, exportPlan, readCopy} from "./presets.js";
 
 const byId = id => document.getElementById(id);
 const fields = ["title", "inputs", "success", "reviewer", "cadence"];
@@ -22,6 +22,8 @@ function render() {
   byId("meta").textContent = plan.cadence + " · Reviewed by " + plan.reviewer;
   byId("goal").textContent = plan.success;
   byId("prompt").textContent = plan.prompt;
+  byId("example").textContent = plan.example;
+  byId("automation").textContent = plan.automation;
   const steps = byId("steps");
   steps.replaceChildren();
   plan.steps.forEach(([heading, body], index) => {
@@ -92,16 +94,47 @@ byId("setup").addEventListener("submit", event => {
   }
 });
 
-byId("download").addEventListener("click", () => {
-  if (!build()) return;
-  const text = exportPlan(plan, done, byId("notes").value);
-  const url = URL.createObjectURL(new Blob([text], {type:"text/markdown;charset=utf-8"}));
+function download(text, filename, type) {
+  const url = URL.createObjectURL(new Blob([text], {type}));
   const link = document.createElement("a");
   link.href = url;
-  link.download = "workflow-playbook.md";
+  link.download = filename;
   link.click();
   setTimeout(() => URL.revokeObjectURL(url), 1500);
+}
+
+byId("download").addEventListener("click", () => {
+  if (!build()) return;
+  download(exportPlan(plan, done, byId("notes").value), "workflow-playbook.md", "text/markdown;charset=utf-8");
   byId("status").textContent = "Playbook downloaded with your checklist and run notes.";
+});
+
+byId("save-copy").addEventListener("click", () => {
+  if (!build()) return;
+  const copy = {format:"workflow-fieldbook/1", preset:current, values:values(), done, notes:byId("notes").value};
+  download(JSON.stringify(copy, null, 2), "workflow-fieldbook.json", "application/json");
+  byId("status").textContent = "Editable copy saved. Use Open a saved playbook to continue.";
+});
+
+byId("open-copy").addEventListener("click", () => byId("import-file").click());
+byId("import-file").addEventListener("change", async event => {
+  const input = event.target;
+  const file = input.files[0];
+  if (!file) return;
+  try {
+    if (file.size > 65536) throw new Error("File too large");
+    const copy = readCopy(await file.text());
+    drafts.set(current, {values:values(), plan, done, notes:byId("notes").value});
+    drafts.set(copy.preset, {...copy, plan:makePlan(copy.values, presets[copy.preset])});
+    selector.value = copy.preset;
+    selectPreset(copy.preset);
+    byId("file-status").textContent = "Saved playbook opened.";
+    byId("result").focus();
+  } catch {
+    byId("file-status").textContent = "Choose an editable JSON copy saved by Workflow Fieldbook.";
+  } finally {
+    input.value = "";
+  }
 });
 
 function preparePrint() {
@@ -111,15 +144,16 @@ function preparePrint() {
   byId("print-notes")?.remove();
   byId("notes").after(fullNotes);
 }
-let promptWasOpen;
+let printDetails;
 window.addEventListener("beforeprint", () => {
-  promptWasOpen = byId("prompt-panel").open;
-  byId("prompt-panel").open = true;
+  printDetails = Array.from(document.querySelectorAll("#result details"), item => [item, item.open]);
+  printDetails.forEach(([item]) => { item.open = true; });
   preparePrint();
 });
 window.addEventListener("afterprint", () => {
-  byId("prompt-panel").open = promptWasOpen;
+  printDetails?.forEach(([item, wasOpen]) => { item.open = wasOpen; });
   byId("print-notes")?.remove();
 });
 byId("print").addEventListener("click", () => { if (build()) window.print(); });
 selectPreset(current);
+document.querySelector(".workspace").hidden = false;
