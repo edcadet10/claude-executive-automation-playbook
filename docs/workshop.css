@@ -1,0 +1,55 @@
+.workshop {background:#f6f7f3}
+.opening {display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(2rem,5vw,5rem);align-items:center;padding:clamp(2.5rem,6vw,4.8rem) 0}
+.opening h1 {max-width:16ch}
+.lead {max-width:37rem;font-size:1.15rem;color:#3b5146}
+.action,.secondary {display:inline-block;font-weight:650;margin:.35rem .85rem .35rem 0}
+.action {background:#205640;color:white;text-decoration:none;border-radius:.4rem;padding:.7rem 1rem}
+.action:hover {background:#153d36}
+.brief {background:#193f37;color:#f6fcf3;border-radius:.8rem;padding:clamp(1.35rem,3vw,2.2rem)}
+.brief-label {color:#c1ddc5;margin:0 0 .8rem;font-size:.92rem}
+.brief h2 {font-size:1.85rem}
+.brief dl {margin:1.5rem 0}
+.brief dl div {display:flex;justify-content:space-between;align-items:baseline;gap:1rem;border-top:1px solid #608476;padding:.65rem 0}
+.brief dd {margin:0;font-size:1.35rem;font-weight:700}
+.brief p:last-child {margin:0}
+.plan-section {border-top:1px solid #b9cbc0;padding:clamp(1.5rem,3vw,2.5rem) 0}
+.plan-section>p {max-width:54rem}
+.stages {list-style:none;padding:0;max-width:65rem;margin:.8rem 0}
+.stages li {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);align-items:start;gap:1.5rem;border-top:1px solid #d3ded5;padding:1rem 0}
+.stages h3,.stages p {margin:0}
+.stages h3 {font-size:1.12rem;line-height:1.35}
+.stages span {display:block;font-size:.9rem;font-weight:500;color:#456654;margin-top:.2rem}
+.case,.paths,.follow {padding:clamp(1.4rem,3vw,2.5rem) 0;border-top:1px solid #b9cbc0}
+.case>p,.scope,.follow p {max-width:56rem}
+.case details {margin:.6rem 0;background:white;border:1px solid #baccc0;border-radius:.45rem;padding:.85rem 1.05rem}
+.case details p {max-width:52rem}
+.case summary {font-size:1.08rem}
+.workshop code {font-size:.9em;overflow-wrap:anywhere}
+.tracks {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
+.tracks h3 {margin:.25rem 0;font-size:1.16rem}
+.tracks article {border-left:3px solid #83aa87;padding-left:.9rem}
+.scope {margin:1.6rem 0 0;color:#405548}
+@media(max-width:760px){.opening,.tracks {grid-template-columns:1fr}.opening {gap:1.5rem}.secondary {display:block}.brief h2 {font-size:1.55rem}}
+@media print {.workshop header,.action,.secondary {display:none}.opening,.tracks {display:block}.brief {color:#153d36;background:white;border:1px solid #80998b}.brief-label {color:#405548}}
+@media(max-width:700px){.stages li {grid-template-columns:1fr;gap:.4rem}}
+@page {size:letter;margin:.76in .82in}
+@media print {
+  .workshop {background:white;font-size:11pt;line-height:1.42}
+  .workshop main {width:100%}
+  .workshop .opening {padding:0 0 1rem}
+  .opening h1 {font-size:31pt;max-width:22ch}
+  .opening .lead {max-width:none;font-size:12pt}
+  .opening .brief {padding:.65rem 1rem;border:1px solid #80998b}
+  .brief h2 {font-size:14pt;margin:.15rem 0}
+  .brief dl {display:flex;gap:1.3rem;margin:.45rem 0}
+  .brief dl div {display:block;border:0;padding:0}
+  .brief dd {font-size:12pt}
+  .plan-section {padding:.65rem 0}
+  .plan-section h2 {font-size:20pt;margin:.3rem 0 .5rem}
+  .stages {margin:.4rem 0}
+  .stages li {display:block;padding:.6rem 0;break-inside:avoid}
+  .stages h3 {font-size:12pt;margin-bottom:.2rem}
+  .stages span {display:inline;margin-left:.4rem;font-size:10pt}
+  .workshop-days {break-before:page}
+  .case,.paths,.follow {display:none}
+}

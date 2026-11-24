@@ -9,7 +9,7 @@
 | 0–5 | “Take me to the last operating meeting. Which decision waited for a number?” | One decision, its owner and the consequence of being late |
 | 5–12 | Executive shares the current workflow using redacted material. Where does Claude lose an entity, repeat a lookup or produce a number nobody trusts? | Sketch of sources, manual steps, elapsed time and a real exception |
 | 12–20 | Jeff opens the TradeProof tool contract and an Agent Sarah teaching example. Executive names which part of each pattern transfers to the business. | Fit on integrations, technical depth and teaching style |
-| 20–27 | Agree on one store, one closed period, one reviewer, and whether a sandbox or approved export is available. | Candidate pilot and fallback |
+| 20–27 | Pick one candidate decision, business entity, reference result and reviewer. Check whether an approved sandbox or export is available. | Candidate pilot and fallback |
 | 27–30 | Agree on 14 or 21 contact hours, delivery dates, owners, access lead times and whether discovery/prep are separately billed. | Written scope and date confirmation |
 
 ## Discovery and preparation
@@ -51,10 +51,15 @@ Each row is contact time, excluding breaks, the fit call, discovery and preparat
 | 2 | 1.5 | Orchestrate retrieval, deterministic arithmetic, Claude drafting and review. Challenge a superficially plausible claim. | Corrected draft and reviewer decision |
 | 2 | 1.0 | Introduce a bad input, replay the job and recover an interrupted handoff. | Failure record and single recoverable draft |
 | 2 | 1.0 | Executive runs the acceptance test unaided. Choose owner, schedule and follow-on work. | Signed handoff or defects with owners |
-| 3, optional | 2.0 | Replace one fixture source with a client-approved sandbox export or adapter and reconcile a second period. | Source-to-report reconciliation |
-| 3, optional | 2.0 | Build the community occupancy sensitivity with the executive and challenge assumptions. | Recomputed scenario and assumptions register |
-| 3, optional | 2.0 | Exercise timer, retries, alerting and restore on the client's selected private host. | Restore transcript and alert receipt |
-| 3, optional | 1.0 | Teach-back, record baseline delta and prioritize the next entity. | Operating owner and 30-day review date |
+
+For the optional third day, select one seven-hour track during discovery.
+
+| Hours | Deployment track | Investment analysis track |
+| ---: | --- | --- |
+| 2.0 | Commission one approved source, verify identity and reconcile a second period. | Reconcile one dated rent roll and expense statement, then agree on the base case. |
+| 2.0 | Stage the private host, bind its service identity, configure the schedule and run once under that identity. | Calculate base and downside net operating income and capture the assumptions in the project. |
+| 2.0 | Exercise timer, retries, alert delivery and restore with the platform owner. | Have the executive change occupancy, trace the variance, and recover from a missing source or stale assumption. |
+| 1.0 | Operator teach-back, evidence review and scheduling sign-off or defects with owners. | Executive teach-back, assumptions register, remaining diligence questions and next review date. |
 
 ## Acceptance and value measurement
 
