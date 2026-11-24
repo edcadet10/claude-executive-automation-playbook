@@ -1,50 +1,43 @@
-# My plan for your advanced Claude engagement
+# Where I would invest your first 14 hours with Claude
 
-**Jeff Cadet · Private, one-on-one consulting and implementation · 14–21 workshop hours**
+**Jeff Cadet · Strategy, implementation and one-on-one executive training**
 
-I’d start by asking you to show me the last business decision where you used Claude and still had to check or redo part of its work. We’ll use that example to choose one recurring workflow, build it together, and test whether you can operate it on your own. My proposed starting point is a dealership month-end review. If underwriting a manufactured-housing acquisition is the more pressing decision, we’ll build around the rent roll and investment assumptions instead.
+I would use this engagement to answer one question. **Which decision across your businesses can Claude improve enough to justify operating the workflow after I leave?** My opening proposal is the dealership margin review. A controller can check the result against a closed P&L, and a GM can act on a material variance at the next operating meeting. Discovery tests whether that opportunity exists in your business.
 
-[Read the client presentation](https://edcadet10.github.io/claude-executive-automation-playbook/) · [Download the engagement plan (PDF)](docs/Jeff-Cadet-Claude-Engagement-Plan.pdf)
+[Read the executive strategy](https://edcadet10.github.io/claude-executive-automation-playbook/) · [Download the two-page decision brief](docs/Jeff-Cadet-Claude-Engagement-Plan.pdf)
 
-## Before the workshop
+## The first portfolio decision
 
-| When | How I’ll work with you | What you’ll have afterward |
+| Opportunity | When I would put it first | What changes my recommendation |
 | --- | --- | --- |
-| **30-minute fit call** | You walk me through a recent decision and the answer Claude gave. I show a comparable MCP tool from my TradeProof work. We identify which parts of your process deserve our time. | One candidate project, a business owner and a decision on whether to proceed. |
-| **Separate discovery meeting, 45–60 minutes** | We replay the current workflow with a redacted example. I record preparation and review time, sources, corrections, entity boundaries and who approves the result. We compare the dealership, investment and cross-business reporting candidates. | A one-page scope naming the pilot, source systems, baseline, success test, reviewer and access dependencies. |
-| **My preparation** | I build an exercise from your approved sample, independently reconcile the expected result, and introduce one realistic failure. I prepare the Claude project, tool contract and teaching materials around your environment. | A tailored workspace, a reference result you trust, and a day-one agenda you can review. |
+| Dealership margin review | A meeting is approaching, preparation or review delays a decision, and the controller can supply an approved close and margin policy. | If the report is already timely and the delay is a pricing decision, investigate that bottleneck. An unavailable reference keeps the automation in rehearsal. |
+| Manufactured-housing underwriting | A live acquisition reaches committee sooner, and the investment lead has a dated rent roll, expenses and a downside case they can verify. | If plausible occupancy changes leave the decision unchanged, ask which assumption could actually alter the investment decision. |
+| Cross-business board reporting | Leadership has named a cross-entity decision and each owner can reconcile its measures and reporting period. | Defer consolidation while two entities use different definitions of the same metric. Reuse the reporting method with separate access and approvals. |
 
-## Day one · Build the workflow around your decision · 7 hours
+In a 30-minute fit call I ask, “What would you do differently if the answer arrived earlier or you trusted it more?” In a separate 45–60 minute discovery session we replay one recent decision. First we establish a usable source, an accepted reference and an accountable reviewer. Among the ready candidates, you choose the decision with the greatest consequence before its deadline. If none is ready, I use preparation time to resolve the missing evidence and keep the workshop on an approved example. You receive a one-page investment decision with the first choice, the deferred alternative and what would reverse the order.
 
-You show me how you do the work today. Together we trace the inputs, agree on the definitions, and preserve the context a fresh Claude session will need. For a dealership close, that includes the accounting company, reporting period, definition of gross profit, approved margin floor and the controller who reviews exceptions.
+## How the workshop earns the next investment
 
-I demonstrate the first run. Then you turn the procedure into a reusable Claude Code skill and run it on a known case. We compare its draft to your reference, correct it, and save the instructions and evidence needed for a second run. **You leave day one with a working pilot on approved sample data and a record of where Claude still needs supervision.**
+**Day one · 7 hours.** We measure the current process, including the time your team spends checking and correcting it. We compare your existing report or template with one bounded Claude workflow on the same case. I demonstrate once, then you build the entity context and reusable Claude Code skill. We keep calculations in code and use Claude to explain the verified facts. You leave with a reconciled pilot and a record of the work it adds or removes.
 
-## Day two · Connect, challenge and operate it · 7 hours
+**Day two · 7 hours.** For the dealership we map HubSpot deals, the QuickBooks close and the Microsoft 365 policy to one entity. We use a scoped MCP read, a drafting skill and a reviewer agent. You try a wrong company, challenge an unsupported explanation and recover a failed run in a fresh session. The controller approves release. A good demonstration earns a supervised trial. A live connector or unattended schedule requires its owner to verify access and recovery in the client environment.
 
-We define the narrow read each system needs to support. In the dealership example, HubSpot supplies the open-deal snapshot, QuickBooks Online supplies the closed P&L, and Microsoft 365 holds the approved policy. We inspect an MCP tool call together and test the wrong company or period. Where sandbox access is ready, we trace an authorized read back to its source. Where access is pending, we use the agreed export and assign an owner for the live check.
+**Optional day three · 7 hours.** Spend it on the uncertainty that matters to your decision. Choose an approved source and private-host rehearsal if operating readiness is the constraint. Choose a second investment case if transferability is the question. If neither would change your funding decision, finish at 14 hours. The fit call, discovery and preparation sit outside workshop hours. We agree dates and commercial scope on the fit call.
 
-We wire the verified figures into a Claude draft and give a separate reviewer agent the source packet to check its claims. You then drive the failure exercise: interrupt a run, replay it and inspect the review queue. The controller owns release. **You leave with the reusable skill, tool configuration, review procedure and a runbook for scheduling, monitoring, retries and recovery.**
+## What counts as value
 
-## Optional day three · Take the pilot further · 7 hours
+Before building, you set the minimum worthwhile improvement and acceptable running cost. For the dealership, count everyone's preparation, review and correction time through controller acceptance. For underwriting, check whether a reconciled sensitivity analysis reached committee in time to affect a decision. In either case we track source accuracy, permission boundaries and who signed off. We price implementation, model usage, hosting and support separately.
 
-We choose one outcome at discovery. If deployment matters most, we connect the next approved source and rehearse the schedule, failure alert and restore on your private host. If investment analysis matters most, we apply the same method to a manufactured-housing deal, change an occupancy assumption and reconcile the effect on net operating income. The result is either an operating rehearsal with the platform owner or a second workflow you can reproduce.
+A fictional close shows why this matters. Manual preparation and review take 80 + 10 = 90 minutes. Assisted preparation and review take 30 + 65 = 95 minutes. The analyst finishes earlier while total labor rises by five minutes. I would revise the review step before asking you to fund expansion on a time-saving claim.
 
-## How you and I will judge success
+## Who decides after the workshop
 
-In a fresh session, you run the pilot without my guidance. You identify the entity and period, trace the material figures to their sources, catch a deliberately bad input and replay the job without duplicating the draft. You explain which facts support the decision and which question still needs a human answer. Together we compare preparation time, review time and corrections against the baseline.
+- **Next real close or committee meeting.** The executive operates the pilot alongside the current process. The controller or investment lead validates the figures. The platform owner records access, running cost, alerts and recovery. The decision log records the result and what action it supported.
+- **At the sponsor review.** Expand to one additional entity when observed value meets your target, quality holds, and the receiving owner accepts the cost and verifies that entity’s access boundary. Revise and retest a fixable shortfall. Stop if the decision benefit cannot justify the burden.
+- **What transfers.** Take the metric definitions, task skill, review procedure and recovery test into the next pilot. Bind credentials, data, thresholds and release authority separately for each business. You retain the workspace, connector map, operating runbook and decision log.
 
-I hand over the workspace, skill and agent definitions, connector map, operating instructions, and a list of remaining dependencies with owners. We agree on the first real cycle to review and what evidence would justify extending the approach to another business. The fit call, discovery and preparation sit outside the 14–21 workshop hours. We confirm dates and commercial scope on the fit call.
+## Evidence you can inspect
 
-## A case you can inspect before we meet
+The public dealership lab uses fictional extracts. Its MCP server returned a 17% gross margin against an 18% floor and rejected the wrong store and month. The Linux timer and ledger have replay checks. Live Claude narration, reviewer-agent execution and the three business-service connections still require verification in an authorized environment. [Recorded MCP calls](docs/mcp-session.json) · [Reporting lab](playbook/reporting-lab.md) · [Verification runs](https://github.com/edcadet10/claude-executive-automation-playbook/actions/workflows/lab.yml)
 
-The public dealership lab uses fictional data. A scoped MCP server returns $42,500 gross profit on $250,000 income, or 17% against an 18% policy floor. The $60,000 sales pipeline is reported separately. The executive’s task is to explain the $2,500 shortfall, challenge an unsupported explanation and check what happens when another store is requested. [Inspect the three recorded MCP calls](docs/mcp-session.json) · [Run the finance lab](playbook/reporting-lab.md)
-
-The public implementation verifies MCP, reconciliation, timer replay and durable review. The model-generated narrative and reviewer-agent turn still need verification with a working Claude account. Live HubSpot, QuickBooks and Microsoft 365 commissioning is scoped to the client’s approved environment. [Commissioning guide](playbook/integrations.md) · [Operations guide](playbook/operations.md)
-
-My teaching approach draws on the TradeProof MCP server, reusable Claude Code skills and the Agent Sarah hands-on training lab. For the detailed hour-by-hour facilitation guide, the implementation files and my public work, use the links below.
-
-- [Workshop facilitation and discovery guide](playbook/engagement.md)
-- [Claude Code skill, MCP and reviewer exercise](playbook/claude-workshop.md)
-- [Jeff Cadet’s practitioner examples](playbook/jeff-cadet.md)
-- [Optional discovery worksheet builder](https://edcadet10.github.io/claude-executive-automation-playbook/discovery.html)
+My examples include the TradeProof MCP server, reusable Claude Code skills and the Agent Sarah teaching lab. [Practitioner evidence](playbook/jeff-cadet.md) · [Facilitator’s hour-by-hour guide](playbook/engagement.md) · [Claude Code workshop](playbook/claude-workshop.md) · [Integration guide](playbook/integrations.md) · [Operating guide](playbook/operations.md) · [Discovery worksheet](https://edcadet10.github.io/claude-executive-automation-playbook/discovery.html)
