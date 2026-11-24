@@ -22,7 +22,10 @@ jobs:
       - run: python -m lab.report
       - run: python -m pip install uv==0.8.20
       - run: uv sync --frozen
-      - run: uv run --frozen --offline python -m lab.check_mcp
+      - name: Reproduce the published MCP example
+        run: |
+          uv run --frozen --offline python -m lab.check_mcp --save "$RUNNER_TEMP/mcp-session.json"
+          diff -u docs/mcp-session.json "$RUNNER_TEMP/mcp-session.json"
   timer:
     runs-on: ubuntu-latest
     timeout-minutes: 4
