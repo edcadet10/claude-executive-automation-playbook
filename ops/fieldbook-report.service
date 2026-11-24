@@ -1,0 +1,19 @@
+[Unit]
+Description=Prepare the north-store reporting draft
+After=local-fs.target
+
+[Service]
+Type=oneshot
+User=fieldbook
+Group=fieldbook
+WorkingDirectory=/opt/workflow-fieldbook
+StateDirectory=fieldbook-north
+StateDirectoryMode=0700
+EnvironmentFile=/etc/fieldbook/north-store.env
+ExecStart=/usr/bin/python3 -m lab.queue --db /var/lib/fieldbook-north/reporting.sqlite3 stage --entity north-store --period ${REPORT_PERIOD} --input /var/lib/fieldbook-north/inbox/month.json
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+TimeoutStartSec=170
