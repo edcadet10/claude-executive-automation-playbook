@@ -1,0 +1,38 @@
+{
+  "entity": "north-store",
+  "period": "2026-09",
+  "crm": {
+    "ref": "CRM-SNAPSHOT-09",
+    "entity": "north-store",
+    "as_of": "2026-09-30",
+    "currency": "USD",
+    "open_deals": [
+      {
+        "id": "D-101",
+        "amount_cents": 2800000
+      },
+      {
+        "id": "D-102",
+        "amount_cents": 3200000
+      }
+    ]
+  },
+  "pl": {
+    "ref": "QBO-PL-09",
+    "entity": "north-store",
+    "period": "2026-09",
+    "currency": "USD",
+    "basis": "accrual",
+    "closed": true,
+    "income_cents": 25000000,
+    "cogs_cents": 20750000,
+    "gross_profit_cents": 4250000
+  },
+  "policy": {
+    "ref": "POL-MARGIN-04",
+    "entity": "north-store",
+    "effective_from": "2026-07-01",
+    "effective_through": "2026-12-31",
+    "floor_bps": 1800
+  }
+}

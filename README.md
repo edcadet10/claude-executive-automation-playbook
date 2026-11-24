@@ -14,6 +14,7 @@ The worked engagement is a dealership month-end review. Sales sees an open deal 
 | --- | --- |
 | [Run the engagement](playbook/engagement.md) | A 30-minute fit call, discovery workpaper, 14-hour core workshop and optional seven-hour extension |
 | [Meet the practitioner](playbook/jeff-cadet.md) | Public examples to demonstrate, how Jeff teaches with them and what to confirm before an engagement |
+| [Run the reporting lab](playbook/reporting-lab.md) | A reproducible month-end packet, controller tie-out, failure drills and a housing-investment exercise |
 
 ### Build plan
 
