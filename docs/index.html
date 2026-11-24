@@ -4,47 +4,79 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#153d36">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
-  <meta name="description" content="Turn a recurring task into a workflow you can run, check and share. A free browser tool by Jeff Cadet.">
-  <title>Workflow Fieldbook · Jeff Cadet</title>
+  <meta name="description" content="Jeff Cadet's advanced Claude consulting workshop. Trace a dealership close through MCP, Claude Code, scheduled execution and controller review.">
+  <title>Advanced Claude engagement plan · Jeff Cadet</title>
   <link rel="stylesheet" href="./style.css">
-  <script type="module" src="./app.js"></script>
+  <link rel="stylesheet" href="./workshop.css">
 </head>
-<body>
-  <a href="#setup" class="skip">Skip to workflow setup</a>
-  <header><div class="wrap top"><a class="brand" href="./"><span aria-hidden="true" class="mark">≋</span> Workflow Fieldbook</a><a href="https://github.com/edcadet10/claude-executive-automation-playbook">GitHub guide</a></div></header>
+<body class="workshop">
+  <a class="skip" href="#plan">Skip to the engagement plan</a>
+  <header><div class="wrap top"><a class="brand" href="./">Jeff Cadet · Consulting labs</a><a href="https://github.com/edcadet10/claude-executive-automation-playbook">GitHub repository</a></div></header>
   <main class="wrap">
-    <section class="intro"><div><p class="byline">A field tool by Jeff Cadet</p><h1>Build a workflow<br>you can repeat.</h1></div>
-    <p class="lede">Pick a task, decide what a good result looks like, and work through your own playbook. Use it on your own or with an AI assistant.</p></section>
-    <noscript><p><a href="./worksheet.txt">Open the plain-text worksheet</a> to complete the playbook on paper or in any text editor.</p></noscript>
-    <div class="workspace" hidden>
-      <form id="setup" class="panel" aria-labelledby="setup-title">
-        <h2 id="setup-title">Set up your workflow</h2>
-        <button id="open-copy" type="button" class="text-button">Open a saved playbook</button>
-        <input type="file" accept=".json,application/json" id="import-file" hidden>
-        <p id="file-status" role="status"></p>
-        <label for="preset">Starting point</label><select id="preset"></select>
-        <label for="title">What do you want to do?</label><input id="title" maxlength="160" required>
-        <label for="inputs">What will you use as evidence?</label><textarea id="inputs" rows="2" maxlength="750" required></textarea>
-        <label for="success">How will you know it worked?</label><textarea id="success" rows="3" maxlength="750" required></textarea>
-        <div class="pair"><div><label for="reviewer">Who checks it?</label><input id="reviewer" required maxlength="100"></div>
-        <div><label for="cadence">How often?</label><select id="cadence"><option>As needed</option><option>Daily</option><option>Weekly</option><option>Monthly</option><option>Per opportunity</option></select></div></div>
-        <button class="primary" type="submit">Build my playbook</button>
-        <p class="hint">Your entries stay in this tab. Save an editable copy to continue another day.</p>
-      </form>
-      <section class="sheet" id="result" aria-labelledby="result-title" tabindex="-1">
-        <div class="sheet-head"><span>YOUR PLAYBOOK</span><span id="progress"></span></div>
-        <h2 id="result-title"></h2><p id="meta"></p>
-        <p id="goal"></p><div id="steps"></div>
-        <details><summary>Worked example</summary><p id="example"></p></details>
-        <details id="prompt-panel"><summary>Prompt for an AI assistant</summary><p id="prompt"></p></details>
-        <details><summary>Automate this workflow</summary><p id="automation"></p><a href="https://github.com/edcadet10/claude-executive-automation-playbook/blob/main/playbook/claude-workshop.md">Open the Claude Code lab</a></details>
-        <label for="notes">Run notes</label><textarea id="notes" rows="2" maxlength="5000" placeholder="What did you check? What needs to change?"></textarea>
-        <div class="actions"><button type="button" id="save-copy">Save editable copy</button><button type="button" id="download">Download playbook (.md)</button><button type="button" id="print">Print or save PDF</button></div>
-      </section>
-    </div>
-    <p id="status" role="status" aria-live="polite"></p>
+    <section class="opening" aria-labelledby="title">
+      <div><p class="byline">Jeff Cadet · Private, one-on-one consulting and implementation</p>
+        <h1 id="title">My plan for your advanced Claude engagement</h1>
+        <p class="lead">Show me one business decision where you used Claude and still had to redo part of the work. We’ll build around that decision. By the end, you should be able to run the workflow, challenge its answer and recover a failed run yourself.</p>
+        <a class="action" href="#plan">Read the engagement plan</a>
+        <a class="secondary" href="./Jeff-Cadet-Claude-Engagement-Plan.pdf" download>Download the plan (PDF)</a>
+      </div>
+      <aside class="brief" aria-labelledby="brief-title">
+        <h2 id="brief-title">What I propose</h2>
+        <dl><div><dt>Initial fit discussion</dt><dd>30 min</dd></div>
+        <div><dt>Core workshop</dt><dd>2 days · 14 hr</dd></div>
+        <div><dt>Optional extension</dt><dd>1 day · 7 hr</dd></div></dl>
+        <p>We choose one pilot together. A dealership close is my proposed starting point. A time-sensitive investment decision could make underwriting the better first project.</p>
+      </aside>
+    </section>
+    <section id="plan" class="plan-section" aria-labelledby="plan-title">
+      <h2 id="plan-title">Before we meet for the workshop</h2>
+      <ol class="stages">
+        <li><h3>Assess fit <span>30 minutes</span></h3><p>You show me a recent decision and where Claude fell short. I demonstrate a comparable tool from my TradeProof work. We leave with one candidate project and a decision on whether to proceed.</p></li>
+        <li><h3>Scope one pilot <span>Separate 45–60 minute discovery meeting</span></h3><p>We replay your current workflow. I document the sources, baseline time, corrections, business entity and reviewer. You leave with a one-page scope, an acceptance test and a short access list.</p></li>
+        <li><h3>Prepare your case <span>My preparation</span></h3><p>With an approved sample, I reconcile the expected result, prepare the Claude workspace and create one failure for us to diagnose. You receive the reference result and tailored agenda before day one.</p></li>
+      </ol>
+      <p>Discovery and preparation are separate from the 14–21 workshop hours. We confirm dates, access and commercial scope on the fit call.</p>
+    </section>
+    <section class="plan-section workshop-days" aria-labelledby="days-title">
+      <h2 id="days-title">What we’ll build together</h2>
+      <ol class="stages">
+        <li><h3>Day one · Build a working pilot <span>7 hours</span></h3><p>You drive the existing process. We place the business rules and metric definitions in an entity-specific Claude project, reconcile one known result, and build a reusable Claude Code skill. You run it from a fresh session. You leave with a sample-data pilot and the evidence needed to check its output.</p></li>
+        <li><h3>Day two · Connect, challenge and operate it <span>7 hours</span></h3><p>We define the MCP reads, test the wrong entity or period, and give a reviewer agent the evidence behind the draft. For a dealership, we map HubSpot deals, the QuickBooks P&amp;L and the policy in Microsoft 365. We use approved sandbox access or exports. You rehearse a failed run, replay it, and take over the review queue.</p></li>
+        <li><h3>Optional day three · Extend the pilot <span>7 hours</span></h3><p>Choose one outcome. We can commission another approved source and rehearse scheduling, alerts and restore on your private host. Or we can build an investment case around a community’s rent roll and show how an occupancy change affects net operating income.</p></li>
+      </ol>
+    </section>
+    <section class="plan-section handoff" aria-labelledby="handoff-title">
+      <h2 id="handoff-title">What you leave with</h2>
+      <p>You receive the workspace, Claude Code skill, reviewer-agent definition, connector map and operating runbook. We record who owns each remaining access or deployment step.</p>
+      <p><strong>The acceptance test is yours to run.</strong> Start in a fresh session. Reproduce the result, trace its figures, catch a bad input, and replay without duplicating the draft. We compare time and corrections with the baseline and choose the first real cycle to review.</p>
+      <p><a href="https://github.com/edcadet10/claude-executive-automation-playbook/blob/main/playbook/engagement.md">Inspect the hour-by-hour delivery schedule</a></p>
+    </section>
+    <section class="case" id="case" aria-labelledby="case-title">
+      <h2 id="case-title">Example pilot · A dealership month-end brief</h2>
+      <p>These results come from three recorded calls to the lab’s read-only MCP server. The server read fictional records. Open the calls below or reproduce the session in your own checkout.</p>
+      <details open><summary>Ask for North Store’s September figures</summary>
+        <p><code>get_reporting_packet("north-store", "2026-09")</code> returned $250,000 in income and $207,500 in cost of goods sold. Gross profit was $42,500. At the policy floor, it would have been $45,000.</p>
+        <p>The figures trace to <code>QBO-PL-09</code>, <code>POL-MARGIN-04</code> and <code>CRM-SNAPSHOT-09</code>. <a href="https://github.com/edcadet10/claude-executive-automation-playbook/blob/main/fixtures/dealer-month.json">Inspect the source records</a>.</p>
+      </details>
+      <details><summary>Ask for another business or reporting period</summary>
+        <p>The same server rejected South Store for September and North Store for August. Both requests returned an error before releasing a financial packet. Ask the executive to predict the outcome, then inspect the returned values. <a href="./mcp-session.json">Open all three recorded calls</a>.</p>
+      </details>
+      <details><summary>Review a plausible explanation for the miss</summary>
+        <p>An example draft says discounting caused the decline. The packet contains a policy comparison, one month of financial totals and open deals. It contains no pricing bridge or prior-month results. The reviewer should return the sentence for revision and ask the controller for the breakdown.</p>
+      </details>
+    </section>
+    <section class="paths" aria-labelledby="build-title"><h2 id="build-title">Implementation materials for the pilot</h2>
+      <div class="tracks">
+        <article><h3>Claude Code and agents</h3><p>Set entity context in <code>CLAUDE.md</code>. Invoke <code>/month-end-brief north-store 2026-09</code> to request the packet and hand the draft to the reviewer agent. Repeat in a fresh session.</p><a href="https://github.com/edcadet10/claude-executive-automation-playbook/blob/main/playbook/claude-workshop.md">Run the Claude Code lab</a></article>
+        <article><h3>Business integrations</h3><p>Map the CRM snapshot to HubSpot, the closed P&amp;L to QuickBooks Online, and the effective policy to Microsoft 365. Reconcile one approved sandbox read per source and test the entity boundary.</p><a href="https://github.com/edcadet10/claude-executive-automation-playbook/blob/main/playbook/integrations.md">Commission the connectors</a></article>
+        <article><h3>Unattended operation</h3><p>A Linux timer stages a draft in a durable review queue. Replay the same period, inspect its draft ID, then restore the ledger and check that the controller’s decision survives.</p><a href="https://github.com/edcadet10/claude-executive-automation-playbook/blob/main/playbook/operations.md">Rehearse scheduling and recovery</a></article>
+      </div>
+      <p class="scope">The MCP calls, financial calculation and timer replay have automated checks. Live Claude drafting and reviewer-agent execution require a working Claude account and remain unverified here. Commissioning the three business systems requires a client sandbox. <a href="https://github.com/edcadet10/claude-executive-automation-playbook/actions/workflows/lab.yml">View verification runs</a>.</p>
+    </section>
+    <section class="follow"><h2>What Jeff brings to the room</h2>
+      <p>Start the fit call with the TradeProof MCP server, then use Agent Sarah to show how a learner checks a grounded answer. The executive finishes the workshop by operating the reporting workflow and explaining a failed case independently. <a href="https://github.com/edcadet10/claude-executive-automation-playbook/blob/main/playbook/jeff-cadet.md">See Jeff’s practitioner examples</a>.</p>
+      <p>To scope a different project, use the <a href="./discovery.html">discovery worksheet builder</a>.</p>
+    </section>
   </main>
-  <footer><div class="wrap foot"><span>Workflow Fieldbook · Jeff Cadet</span><a href="./worksheet.txt">Plain-text worksheet</a><a href="https://github.com/edcadet10/claude-executive-automation-playbook/blob/main/playbook/engagement.md">Advanced Claude workshop</a></div></footer>
 </body>
 </html>
